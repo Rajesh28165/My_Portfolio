@@ -66,6 +66,9 @@ class MyConstants {
   static const String PROFESSIONAL_CAREER = "My Proffessional Career";
   static const String PROFESSIONAL_SUMMARY = "I am Rajesh Yadav, a results-driven Software Engineer specializing in Flutter mobile application development for Android and iOS. I have strong problem-solving skills, backed by solid knowledge of Mathematics and a good grasp of Data Structures and Algorithms. I am passionate about building high-quality, scalable, and user-friendly applications, with expertise in UI/UX design, API integration, performance optimization, and component-based development.";
   static const String FULL_NAME = "Rajesh Yadav";
+  static const String DOB = "25th March 2000";
+  static const String GENDER = "Male";
+  static const String LOCATION = "Mumbai, Maharashtra, India";
   static const String PHONE = "+91 8097728165";
   static const String EMAIL = "rj993030@gmail.com";
   static const String LINKEDIN = "https://www.linkedin.com/in/rajesh-yadav-03279b1b1/";

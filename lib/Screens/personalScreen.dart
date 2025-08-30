@@ -15,7 +15,7 @@ class PersonalDetail extends StatefulWidget {
 class _PersonalDetailState extends State<PersonalDetail> {
   @override
   Widget build(BuildContext context) {
-    final mySpacer = SizedBox(height: context.getPercentHeight(4));
+    final mySpacer = SizedBox(height: context.getPercentHeight(3));
 
     return Scaffold(
       backgroundColor: Colors.brown.shade100,
@@ -49,14 +49,18 @@ class _PersonalDetailState extends State<PersonalDetail> {
               mySpacer,
               TextWidget("Name", MyConstants.FULL_NAME),
               mySpacer,
+              TextWidget("Date of Birth", MyConstants.DOB),
+              mySpacer,
+              TextWidget("Gender", MyConstants.GENDER),
+              mySpacer,
+              TextWidget("Location", MyConstants.LOCATION),
+              mySpacer,
               TextWidget("Phone", MyConstants.PHONE, urlLink: MyConstants.PHONE),
               mySpacer,
               TextWidget("Email", MyConstants.EMAIL, urlLink: MyConstants.EMAIL),
               mySpacer,
               TextWidget("GitHub", "GitHub Profile", urlLink: MyConstants.GITHUB),
               mySpacer,
-              // TextWidget("Portfolio", "My Portfolio", urlLink: MyConstants.PORTFOLIO),
-              // mySpacer,
               TextWidget("LinkedIn", "LinkedIn Profile", urlLink: MyConstants.LINKEDIN),
               mySpacer,
               TextWidget("LeetCode", "LeetCode Profile", urlLink: MyConstants.LEETCODE),
