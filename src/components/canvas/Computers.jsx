@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-
+/* ------------------ Responsive Hook ------------------ */
 const useResponsive = () => {
   const [screen, setScreen] = useState("desktop");
 
@@ -26,7 +26,7 @@ const useResponsive = () => {
   return screen;
 };
 
-
+/* ------------------ 3D Model ------------------ */
 const Computers = ({ screen }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
@@ -48,9 +48,17 @@ const Computers = ({ screen }) => {
   const { scale, position } = modelConfig[screen];
 
   return (
-     <mesh
-      onPointerOver={() => (document.body.style.cursor = "move")}
-      onPointerOut={() => (document.body.style.cursor = "default")}
+    <mesh
+      onPointerOver={
+        screen !== "mobile"
+          ? () => (document.body.style.cursor = "move")
+          : undefined
+      }
+      onPointerOut={
+        screen !== "mobile"
+          ? () => (document.body.style.cursor = "default")
+          : undefined
+      }
     >
       <hemisphereLight intensity={0.15} groundColor="black" />
 
@@ -75,7 +83,7 @@ const Computers = ({ screen }) => {
   );
 };
 
-
+/* ------------------ Canvas Wrapper ------------------ */
 const ComputersCanvas = () => {
   const screen = useResponsive();
 
@@ -89,13 +97,19 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      dpr={[1, 2]}
+      dpr={screen === "mobile" ? 1 : [1, 2]}
       camera={cameraConfig[screen]}
       gl={{ preserveDrawingBuffer: true }}
+      style={{
+        pointerEvents: screen === "mobile" ? "none" : "auto",
+      }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
+          enablePan={false}
+          enableRotate={screen !== "mobile"}
+          autoRotate={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
