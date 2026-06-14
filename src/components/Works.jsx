@@ -11,50 +11,80 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ProjectCard = ({
   index,
   name,
+  type,
   description,
   tags,
   image,
-  source_code_link,
+  playstore_link,
+  appstore_link,
 }) => {
   return (
     <motion.div
-  variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-  className={`${index === 0 ? "sm:w-[720px]" : "sm:w-[400px]"} w-full`}
->
-  <Tilt
-    options={{
-      max: 45,
-      scale: 1,
-      speed: 450,
-    }}
-    className="bg-tertiary p-5 rounded-2xl w-full h-full"
-  >
-    <div className="relative">
-      <img
-        src={image}
-        alt="project_image"
-        className="w-full h-[700px] object-cover rounded-2xl"
-      />
-    </div>
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className="w-full"
+    >
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary p-5 rounded-2xl w-full h-full"
+      >
+        <div className="relative w-full">
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-[500px] object-cover rounded-2xl"
+          />
+        </div>
 
-    <div className="mt-5">
-      <h3 className="text-white font-bold text-[24px]">{name}</h3>
-      <p className="mt-2 text-secondary text-[14px]">{description}</p>
-    </div>
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <p className="text-green-400 text-sm mt-1">
+            {type}
+          </p>
+          <p className="mt-2 text-secondary text-[14px]">
+            {description}
+          </p>
+        </div>
 
-    <div className="mt-4 flex flex-wrap gap-2">
-      {tags.map((tag) => (
-        <p
-          key={`${name}-${tag.name}`}
-          className={`text-[14px] ${tag.color}`}
-        >
-          #{tag.name}
-        </p>
-      ))}
-    </div>
-  </Tilt>
-</motion.div>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[14px] ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
 
+        <div className="mt-5 flex gap-3 flex-wrap">
+          {playstore_link && (
+            <a
+              href={playstore_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 px-4 py-2 rounded-lg text-white text-sm"
+            >
+              Play Store
+            </a>
+          )}
+
+          {appstore_link && (
+            <a
+              href={appstore_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 px-4 py-2 rounded-lg text-white text-sm"
+            >
+              App Store
+            </a>
+          )}
+        </div>
+      </Tilt>
+    </motion.div>
   );
 };
 
@@ -62,7 +92,6 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        {/* <p className={`${styles.sectionSubText} `}>My work</p> */}
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
@@ -78,9 +107,13 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
         ))}
       </div>
     </>

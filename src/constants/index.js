@@ -22,6 +22,7 @@ import {
   hidr8,
   webImage,
   appImage,
+  kharchaSutra,
   threejs,
   flutter,
   dart,
@@ -119,18 +120,18 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Developer Engineer - 1",
+    title: "Software Engineer",
     company_name: "Tekenlight Solutions Pvt Ltd",
     icon: coder,
     iconBg: "#fff",
     date: "Jan 2025 - Present",
     points: [
-      "Developing secure, scalable cross-platform mobile applications for Android and iOS using Flutter and Dart, and contributing to Angular-based web modules for fintech platforms.",
-      "Implementing frontend-critical features including authentication flows, OTP verification, secure local storage, and session lifecycle management.",
-      "Building high-performance, responsive UIs using Bloc/Cubit and clean MV* architectures, with a focus on maintainability and scalability.",
-      "Designing reusable UI components and optimizing application performance to improve user experience across devices.",
-      "Collaborating closely with backend engineers, UX designers, and product teams to deliver reliable, user-focused solutions.",
-      "Actively learning backend development with Java and Golang, with working familiarity in Python and React to support end-to-end development."
+      "Developed secure, scalable cross-platform mobile applications for Android and iOS using Flutter and Dart, while contributing to Angular-based web modules for fintech platforms.",
+      "Implemented frontend-critical features including authentication flows, OTP verification, secure local storage, and session lifecycle management to enhance application security and user experience.",
+      "Built high-performance, responsive user interfaces using Bloc/Cubit and clean architecture principles, ensuring maintainability and scalability.",
+      "Designed reusable UI components and optimized application performance to improve responsiveness and consistency across devices.",
+      "Collaborated closely with backend engineers, UX designers, and product teams to deliver reliable, user-centric solutions aligned with business requirements.",
+      "Gained exposure to backend development using Java and Golang, while leveraging Python and React to support full-stack development initiatives."
     ],
   },
   {
@@ -148,76 +149,51 @@ const experiences = [
   }
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
     name: "Cash Republic",
-    description: "CashRepublic is a digital financial platform that provides users with a prepaid debit card and essential money management features such as direct deposits, mobile wallet support, and fee-free access to funds. The platform is designed to make everyday banking more accessible and affordable for users without traditional bank accounts",
+    type: "Web Application",
+    description: "Cash Republic is a customer service web application that enables branch representatives to assist users with banking and account-related services. The platform supports account creation, debit card management, profile updates, and issue resolution, helping deliver a seamless experience across digital and in-person banking channels.",
     tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Type Script",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Angular",
-        color: "pink-text-gradient",
-      },
+      { name: "HTML", color: "blue-text-gradient" },
+      { name: "CSS", color: "orange-text-gradient" },
+      { name: "TypeScript", color: "blue-text-gradient" },
+      { name: "Angular", color: "pink-text-gradient" },
     ],
     image: webImage,
+    playstore_link: "",
+    appstore_link: "",
   },
   {
     name: "Omni Financial",
-    description: "Omni Financial is a feature-rich mobile financial application primarily serving military members and veterans, delivering secure money management and personal loan experiences, with streamlined onboarding, real-time account tracking, and intuitive user flows also available to civilian users.",
+    type: "Mobile Application",
+    description: "Omni Financial is a mobile banking and lending application designed primarily for military members, veterans, and their families. The app provides secure account management, personal loan services, real-time transaction tracking, and streamlined onboarding, delivering a reliable and user-friendly digital financial experience.",
     tags: [
-      {
-        name: "Dart",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Fluuter",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Bloc-Cubit",
-        color: "pink-text-gradient",
-      },
+      { name: "Dart", color: "blue-text-gradient" },
+      { name: "Flutter", color: "orange-text-gradient" },
+      { name: "Bloc/Cubit", color: "pink-text-gradient" },
+      { name: "Firebase", color: "blue-text-gradient" },
     ],
     image: appImage,
+    playstore_link: "https://play.google.com/store/apps/details?id=com.omnifinancial.pub",
+    appstore_link: "https://apps.apple.com/in/app/omni-financial/id1645035640",
+  },
+  {
+    name: "Kharcha Sutra",
+    type: "Mobile Application",
+    description:
+      "Kharcha Sutra is a personal finance management application that helps users track income, expenses, and spending habits with ease. The app offers transaction categorization, financial insights, and budget monitoring features, empowering users to make smarter financial decisions and maintain better control over their money.",
+    tags: [
+      { name: "Dart", color: "blue-text-gradient" },
+      { name: "Flutter", color: "orange-text-gradient" },
+      { name: "Bloc/Cubit", color: "pink-text-gradient" },
+      { name: "Firebase", color: "blue-text-gradient" },
+    ],
+    image: kharchaSutra,
+    playstore_link: "https://play.google.com/store/apps/details?id=com.kharchasutra.app",
+    appstore_link: "",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

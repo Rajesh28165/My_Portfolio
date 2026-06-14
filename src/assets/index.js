@@ -38,6 +38,7 @@ import anshuiya from "./anshuiya.png";
 import hidr8 from "./hidr8.jpg";
 import webImage from "./webImage.png";
 import appImage from "./appImage.jpg";
+import kharchaSutra from "./kharchaSutra.jpg";
 
 export {
   logo,
@@ -70,6 +71,7 @@ export {
   hidr8,
   webImage,
   appImage,
+  kharchaSutra,
   flutter,
   dart,
   java,
