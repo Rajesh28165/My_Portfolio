@@ -1,5 +1,4 @@
 import logo from "./logo-no-background.svg";
-import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
@@ -13,6 +12,7 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
+import api from "./tech/api.png";
 import chakra from "./tech/chakra.png";
 import ionic from "./tech/ionic.png";
 import reactjs from "./tech/reactjs.png";
@@ -25,25 +25,24 @@ import dart from "./tech/dart.png";
 import python from "./tech/python.png";
 import java from "./tech/java.png";
 import golang from "./tech/golang.png";
+import firebase from "./tech/firebase.png";
 import mongodb from "./tech/mongodb.png";
 import sql from "./tech/sql.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import coder from "./company/coder.png";
+import engineer from "./company/engineer.png";
 import verification from "./company/verification.png";
 
-import dav from "./dav.png";
-import anshuiya from "./anshuiya.png";
-import hidr8 from "./hidr8.jpg";
 import webImage from "./webImage.png";
 import appImage from "./appImage.jpg";
 import kharchaSutra from "./kharchaSutra.jpg";
 
 export {
   logo,
-  backend,
   creator,
+  api,
   mobile,
   web,
   github,
@@ -65,10 +64,8 @@ export {
   meta,
   shopify,
   coder,
+  engineer,
   verification,
-  dav,
-  anshuiya,
-  hidr8,
   webImage,
   appImage,
   kharchaSutra,
@@ -76,6 +73,7 @@ export {
   dart,
   java,
   golang,
+  firebase,
   python,
   mongodb,
   sql

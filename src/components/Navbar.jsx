@@ -43,7 +43,7 @@ const Navbar = () => {
           }}
         >
           <p className="text-white text-[18px] font-bold cursor-pointer flex flex-col sm:flex-row sm:items-center">
-            <span>Rajesh</span>
+            <span>Rajesh Yadav</span>
 
             <span className="hidden sm:inline">
               &nbsp;|&nbsp;

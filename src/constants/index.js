@@ -1,33 +1,25 @@
 import {
   mobile,
-  backend,
-  creator,
   web,
+  api,
   javascript,
   typescript,
   html,
   css,
   reactjs,
   angular,
-  bootstrap,
-  chakra,
-  ionic,
   git,
-  figma,
-  blender,
   coder,
+  engineer,
   verification,
-  dav,
-  anshuiya,
-  hidr8,
   webImage,
   appImage,
   kharchaSutra,
-  threejs,
   flutter,
   dart,
   java,
   golang,
+  firebase,
   python,
   mongodb,
   sql
@@ -69,6 +61,22 @@ const technologies = [
     icon: dart,
   },
   {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "API",
+    icon: api,
+  },
+   {
+    name: "Angular",
+    icon: angular,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -83,14 +91,6 @@ const technologies = [
   {
     name: "TypeScript",
     icon: typescript,
-  },
-  {
-    name: "Angular",
-    icon: angular,
-  },
-  {
-    name: "Python",
-    icon: python,
   },
   {
     name: "SQL",
@@ -121,10 +121,23 @@ const technologies = [
 const experiences = [
   {
     title: "Software Engineer",
+    company_name: "Nagarro Software Pvt Ltd",
+    location: "Mumbai, India",
+    icon: engineer,
+    iconBg: "#fff",
+    date: "Jul 2026 - present",
+    points: [
+      "Joined as a Software Engineer and completed technical upskilling in React and AI fundamentals.",
+      "Built hands-on React applications using Redux Toolkit, REST APIs, routing, and CRUD operations."
+    ],
+  },
+  {
+    title: "Software Engineer",
     company_name: "Tekenlight Solutions Pvt Ltd",
+    location: "Bangalore, India",
     icon: coder,
     iconBg: "#fff",
-    date: "Jan 2025 - Present",
+    date: "Jan 2025 - Jun 2026",
     points: [
       "Developed secure, scalable cross-platform mobile applications for Android and iOS using Flutter and Dart, while contributing to Angular-based web modules for fintech platforms.",
       "Implemented frontend-critical features including authentication flows, OTP verification, secure local storage, and session lifecycle management to enhance application security and user experience.",
@@ -135,8 +148,9 @@ const experiences = [
     ],
   },
   {
-    title: "Verification Executive",
+    title: "Senior Verification Executive",
     company_name: "Teleperformance",
+    location: "Mumbai, India",
     icon: verification,
     iconBg: "#fff",
     date: "Jul 2023- April 2024",
@@ -153,7 +167,7 @@ const experiences = [
 const projects = [
   {
     name: "Cash Republic",
-    type: "Web Application",
+    type: "Web Application | Angular",
     description: "Cash Republic is a customer service web application that enables branch representatives to assist users with banking and account-related services. The platform supports account creation, debit card management, profile updates, and issue resolution, helping deliver a seamless experience across digital and in-person banking channels.",
     tags: [
       { name: "HTML", color: "blue-text-gradient" },
@@ -167,7 +181,7 @@ const projects = [
   },
   {
     name: "Omni Financial",
-    type: "Mobile Application",
+    type: "Mobile Application | Flutter",
     description: "Omni Financial is a mobile banking and lending application designed primarily for military members, veterans, and their families. The app provides secure account management, personal loan services, real-time transaction tracking, and streamlined onboarding, delivering a reliable and user-friendly digital financial experience.",
     tags: [
       { name: "Dart", color: "blue-text-gradient" },
@@ -177,13 +191,12 @@ const projects = [
     ],
     image: appImage,
     playstore_link: "https://play.google.com/store/apps/details?id=com.omnifinancial.pub",
-    appstore_link: "https://apps.apple.com/in/app/omni-financial/id1645035640",
+    appstore_link: "",
   },
   {
-    name: "Kharcha Sutra",
-    type: "Mobile Application",
-    description:
-      "Kharcha Sutra is a personal finance management application that helps users track income, expenses, and spending habits with ease. The app offers transaction categorization, financial insights, and budget monitoring features, empowering users to make smarter financial decisions and maintain better control over their money.",
+    name: "Kharcha Sutra | Solo Contributer",
+    type: "Mobile Application | Flutter",
+    description: "Kharcha Sutra is a personal finance management application that helps users track income, expenses, and spending habits with ease. The app offers transaction categorization, financial insights, and budget monitoring features, empowering users to make smarter financial decisions and maintain better control over their money.",
     tags: [
       { name: "Dart", color: "blue-text-gradient" },
       { name: "Flutter", color: "orange-text-gradient" },
