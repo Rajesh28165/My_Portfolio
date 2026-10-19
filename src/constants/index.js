@@ -10,10 +10,12 @@ import {
   angular,
   git,
   coder,
+  application,
   engineer,
   verification,
   webImage,
-  appImage,
+  omniFinancial,
+  omniCommand,
   kharchaSutra,
   flutter,
   dart,
@@ -130,6 +132,7 @@ const technologies = [
   },
 ];
 
+
 const experiences = [
   {
     title: "Software Engineer",
@@ -137,10 +140,10 @@ const experiences = [
     location: "Mumbai, India",
     icon: engineer,
     iconBg: "#fff",
-    date: "Jul 2026 - present",
+    date: "Jul 2026 - Present",
     points: [
-      "Joined as a Software Engineer and completed technical upskilling in React and AI fundamentals.",
-      "Built hands-on React applications using Redux Toolkit, REST APIs, routing, and CRUD operations."
+      "Completed technical upskilling in React.js and AI fundamentals.",
+      "Built hands-on React applications using Redux Toolkit, REST APIs, routing, and CRUD operations.",
     ],
   },
   {
@@ -151,28 +154,28 @@ const experiences = [
     iconBg: "#fff",
     date: "Jan 2025 - Jun 2026",
     points: [
-      "Developed secure, scalable cross-platform mobile applications for Android and iOS using Flutter and Dart, while contributing to Angular-based web modules for fintech platforms.",
-      "Implemented frontend-critical features including authentication flows, OTP verification, secure local storage, and session lifecycle management to enhance application security and user experience.",
-      "Built high-performance, responsive user interfaces using Bloc/Cubit and clean architecture principles, ensuring maintainability and scalability.",
-      "Designed reusable UI components and optimized application performance to improve responsiveness and consistency across devices.",
-      "Collaborated closely with backend engineers, UX designers, and product teams to deliver reliable, user-centric solutions aligned with business requirements.",
-      "Gained exposure to backend development using Java and Golang, while leveraging Python and React to support full-stack development initiatives."
+      "Developed secure, cross-platform fintech applications for Android and iOS using Flutter and Dart, alongside Angular-based web modules.",
+      "Implemented authentication, OTP verification, secure local storage, and session management.",
+      "Built responsive, reusable UI components using Bloc/Cubit and clean architecture principles.",
+      "Optimized widget rebuilds, rendering performance, and application responsiveness across devices.",
+      "Integrated REST APIs and collaborated with backend, design, and product teams to deliver reliable features.",
+      "Gained exposure to Java, Golang, Python, and React through backend and full-stack development initiatives.",
     ],
   },
   {
-    title: "Senior Verification Executive",
-    company_name: "Teleperformance",
-    location: "Mumbai, India",
-    icon: verification,
+    title: "Application Developer",
+    company_name: "Newgen Technomate LLP",
+    location: "Pune, India",
+    icon: application,
     iconBg: "#fff",
-    date: "Jul 2023- April 2024",
+    date: "Oct 2022 - Nov 2024",
     points: [
-      "Performed employment and education verifications, ensuring high accuracy, compliance, and data confidentiality.",
-      "Validated information from multiple sources and delivered timely verification results under strict deadlines.",
-      "Collaborated with internal teams to streamline workflows and maintain quality standards",
-      "Maintained detailed documentation while adhering to process and compliance guidelines."
+      "Developed cross-platform mobile application screens and reusable UI components using Flutter and Dart.",
+      "Implemented state management, navigation, API integration, and responsive layouts.",
+      "Improved application performance by optimizing widget rebuilds and rendering.",
+      "Collaborated with backend developers to integrate APIs, debug issues, and resolve application defects.",
     ],
-  }
+  },
 ];
 
 
@@ -192,16 +195,30 @@ const projects = [
     appstore_link: "",
   },
   {
-    name: "Omni Financial",
+    name: "Omni Command",
     type: "Mobile Application | Flutter",
-    description: "Omni Financial is a mobile banking and lending application designed primarily for military members, veterans, and their families. The app provides secure account management, personal loan services, real-time transaction tracking, and streamlined onboarding, delivering a reliable and user-friendly digital financial experience.",
+    description: "A mobile banking application designed for U.S. military personnel, veterans, and Department of Defense employees, offering early paycheck access, fee-free checking, debit card management, direct deposit setup, and secure financial transactions.",
     tags: [
       { name: "Dart", color: "blue-text-gradient" },
       { name: "Flutter", color: "orange-text-gradient" },
       { name: "Bloc/Cubit", color: "pink-text-gradient" },
       { name: "Firebase", color: "blue-text-gradient" },
     ],
-    image: appImage,
+    image: omniCommand,
+    playstore_link: "https://play.google.com/store/apps/details?id=com.omnicommand.pub",
+    appstore_link: "https://apps.apple.com/us/app/omni-command/id6751181659",
+  },
+  {
+    name: "Omni Financial",
+    type: "Mobile Application | Flutter",
+    description: "A mobile financial management application for U.S. military personnel, enabling users to manage debit cards, track spending, locate ATMs, deposit cash at retail locations, and access digital wallet services.",
+    tags: [
+      { name: "Dart", color: "blue-text-gradient" },
+      { name: "Flutter", color: "orange-text-gradient" },
+      { name: "Bloc/Cubit", color: "pink-text-gradient" },
+      { name: "Firebase", color: "blue-text-gradient" },
+    ],
+    image: omniFinancial,
     playstore_link: "https://play.google.com/store/apps/details?id=com.omnifinancial.pub",
     appstore_link: "",
   },

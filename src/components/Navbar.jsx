@@ -11,6 +11,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const RESUME_URL = "https://drive.google.com/file/d/1BNqqP7rIJWugOh9jwo2lFFn6lrRaFfL3/view?usp=drive_link";
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -66,20 +68,19 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              {/* <a href={`#${nav.id}`}>{nav.title}</a> */}
               {nav.id === "resume" ? (
-        <a
-          href="/Rajesh_Yadav_Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2"
-          title="Download Resume"
-        >
-          Resume <FaDownload size={15} />
-        </a>
-      ) : (
-        <a href={`#${nav.id}`}>{nav.title}</a>
-      )}
+            <a
+              href={RESUME_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+              title="Download Resume"
+            >
+              Resume <FaDownload size={15} />
+            </a>
+          ) : (
+            <a href={`#${nav.id}`}>{nav.title}</a>
+          )}
             </li>
           ))}
         </ul>
@@ -98,32 +99,32 @@ const Navbar = () => {
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-  {navLinks.map((nav) => (
-    <li
-      key={nav.id}
-      className={`font-poppins font-medium cursor-pointer text-[16px] ${
-        active === nav.title ? "text-white" : "text-secondary"
-      }`}
-      onClick={() => {
-        setToggle(false);
-        setActive(nav.title);
-      }}
-    >
-      {nav.id === "resume" ? (
-        <a
-          href="/Rajesh_Yadav_Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2"
-        >
-          Resume <FaDownload size={14} />
-        </a>
-      ) : (
-        <a href={`#${nav.id}`}>{nav.title}</a>
-      )}
-    </li>
-  ))}
-</ul>
+              {navLinks.map((nav) => (
+                <li
+                  key={nav.id}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                    active === nav.title ? "text-white" : "text-secondary"
+                  }`}
+                  onClick={() => {
+                    setToggle(false);
+                    setActive(nav.title);
+                  }}
+                >
+                  {nav.id === "resume" ? (
+                    <a
+                      href={RESUME_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      Resume <FaDownload size={14} />
+                    </a>
+                  ) : (
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  )}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

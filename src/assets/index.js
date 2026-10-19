@@ -32,11 +32,13 @@ import sql from "./tech/sql.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import coder from "./company/coder.png";
+import application from "./company/application.png";
 import engineer from "./company/engineer.png";
 import verification from "./company/verification.png";
 
 import webImage from "./webImage.png";
-import appImage from "./appImage.jpg";
+import omniFinancial from "./omniFinancial.jpg";
+import omniCommand from "./omniCommand.jpeg";
 import kharchaSutra from "./kharchaSutra.jpg";
 
 export {
@@ -64,10 +66,12 @@ export {
   meta,
   shopify,
   coder,
+  application,
   engineer,
   verification,
   webImage,
-  appImage,
+  omniFinancial,
+  omniCommand,
   kharchaSutra,
   flutter,
   dart,

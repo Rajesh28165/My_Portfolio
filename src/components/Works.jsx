@@ -13,6 +13,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  imageFit = "contain",
   playstore_link,
   appstore_link,
 }) => {
@@ -29,16 +30,19 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl w-full h-full"
       >
+        <div>
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+        </div>
+        
         <div className="relative w-full">
           <img
             src={image}
             alt={name}
-            className="w-full h-[500px] object-cover rounded-2xl"
+            className={`w-full h-[500px] object-${imageFit} rounded-2xl`}
           />
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="text-green-400 text-sm mt-1">
             {type}
           </p>
@@ -105,7 +109,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-7">
         {projects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}

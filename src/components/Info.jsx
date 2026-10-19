@@ -32,7 +32,7 @@ const Info = () => {
           {/* Location */}
           <div className="flex items-center gap-2">
             <FiMapPin className="text-white text-base" />
-            <span>Mumbai, India</span>
+            <span>Mumbai, Maharashtra, India</span>
           </div>
 
         </div>
