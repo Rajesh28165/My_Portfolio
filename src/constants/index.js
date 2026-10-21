@@ -142,24 +142,24 @@ const experiences = [
     iconBg: "#fff",
     date: "Jul 2026 - Present",
     points: [
-      "Completed technical upskilling in React.js and AI fundamentals.",
+      "Completed company-led technical upskilling in React.js and AI fundamentals.",
       "Built hands-on React applications using Redux Toolkit, REST APIs, routing, and CRUD operations.",
     ],
   },
   {
     title: "Software Engineer",
     company_name: "Tekenlight Solutions Pvt Ltd",
-    location: "Bangalore, India",
+    location: "Bengaluru, India",
     icon: coder,
     iconBg: "#fff",
     date: "Jan 2025 - Jun 2026",
     points: [
-      "Developed secure, cross-platform fintech applications for Android and iOS using Flutter and Dart, alongside Angular-based web modules.",
-      "Implemented authentication, OTP verification, secure local storage, and session management.",
-      "Built responsive, reusable UI components using Bloc/Cubit and clean architecture principles.",
-      "Optimized widget rebuilds, rendering performance, and application responsiveness across devices.",
-      "Integrated REST APIs and collaborated with backend, design, and product teams to deliver reliable features.",
-      "Gained exposure to Java, Golang, Python, and React through backend and full-stack development initiatives.",
+      "Developed fintech and mobile banking features for Android and iOS using Flutter and Dart, alongside Angular web modules.",
+      "Implemented secure authentication, OTP verification, token management, and session handling.",
+      "Built reusable UI components using Bloc/Cubit and Clean Architecture principles.",
+      "Integrated REST APIs, Firebase Authentication, Google APIs, and third-party services.",
+      "Managed application builds and deployments across Development, UAT, and Production environments.",
+      "Investigated application issues, centralized error handling, and optimized widget performance.",
     ],
   },
   {
@@ -170,14 +170,14 @@ const experiences = [
     iconBg: "#fff",
     date: "Oct 2022 - Nov 2024",
     points: [
-      "Developed cross-platform mobile application screens and reusable UI components using Flutter and Dart.",
-      "Implemented state management, navigation, API integration, and responsive layouts.",
-      "Improved application performance by optimizing widget rebuilds and rendering.",
-      "Collaborated with backend developers to integrate APIs, debug issues, and resolve application defects.",
+      "Developed fintech application features and reusable UI components using Flutter and Dart.",
+      "Implemented multi-step registration, secure sign-in, OTP authentication, and session management.",
+      "Reduced code duplication by approximately 30% through reusable widgets and shared components.",
+      "Integrated REST APIs, token refresh, and API pagination.",
+      "Collaborated with backend developers to troubleshoot issues and improve application reliability.",
     ],
   },
 ];
-
 
 const projects = [
   {

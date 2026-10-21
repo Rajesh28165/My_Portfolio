@@ -58,9 +58,11 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          I’m an enthusiastic software developer with a strong interest in building reliable, user-friendly applications, with a primary focus on mobile development using Flutter. I enjoy learning new technologies, adapting to different environments, and continuously improving my skills through feedback and hands-on experience. <br/> <br/>
+          I’m a software developer passionate about building reliable and user-friendly applications, with a primary focus on mobile development using Flutter. I have experience working on fintech and mobile banking applications, along with web development using Angular. <br/><br/>
 
-          I’m a self-motivated and quick learner with a problem-solving mindset, who enjoys collaborating with teammates to turn ideas into practical solutions. I value clean design, clear communication, and teamwork, and I’m always eager to grow as a developer while contributing meaningfully to the products I work on.
+          I enjoy solving problems, writing clean and maintainable code, and turning ideas into practical solutions. I also enjoy exploring new tools and approaches to improve application quality and performance.<br/><br/>
+
+          I’m always open to learning new technologies, taking on new challenges, and continuously improving my skills through hands-on experience and collaboration.
         </motion.p>
 
         
