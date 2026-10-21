@@ -133,6 +133,7 @@ const technologies = [
 ];
 
 
+
 const experiences = [
   {
     title: "Software Engineer",
@@ -144,6 +145,7 @@ const experiences = [
     points: [
       "Completed company-led technical upskilling in React.js and AI fundamentals.",
       "Built hands-on React applications using Redux Toolkit, REST APIs, routing, and CRUD operations.",
+      "Independently developed and deployed Kharcha Sutra, a Flutter finance app featuring income and expense tracking, transaction categorization, and spending analytics using Bloc/Cubit, Clean Architecture, and Firebase.",
     ],
   },
   {
@@ -158,8 +160,9 @@ const experiences = [
       "Implemented secure authentication, OTP verification, token management, and session handling.",
       "Built reusable UI components using Bloc/Cubit and Clean Architecture principles.",
       "Integrated REST APIs, Firebase Authentication, Google APIs, and third-party services.",
+      "Monitored server logs, investigated application errors, and implemented fixes to resolve issues.",
       "Managed application builds and deployments across Development, UAT, and Production environments.",
-      "Investigated application issues, centralized error handling, and optimized widget performance.",
+      "Optimized widget performance and centralized error handling to improve application reliability.",
     ],
   },
   {
@@ -178,6 +181,8 @@ const experiences = [
     ],
   },
 ];
+
+
 
 const projects = [
   {
